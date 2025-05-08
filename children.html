@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children's Fashion - FashionStore</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome for heart icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script defer src="main.js"></script>
+    <link rel="icon" href="favicon-32x32.png">
+
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <div class="welcome-msg">Welcome to our fashion store!</div>
+                <div class="contact-info">Contact: info@fashionstore.com</div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <nav>
+                <div class="logo">Fashion<span>Store</span></div>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="female.html">Female</a></li>
+                    <li><a href="male.html">Male</a></li>
+                    <li><a href="children.html" class="active">Children</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="login.html">Login</a></li>
+
+                    <li>
+                        <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i> <!-- Default shows moon icon (light mode) -->
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Children's Fashion</h1>
+    </section>
+    
+    <!-- Products Section -->
+     <div class="parentcard">
+    <section class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Children's Collection</h2>
+                <p>Discover the latest trends in children's fashion</p>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxpisbjjtn24xmkxEiqXw_065MQ85C_IFnEQ&s" alt="Kids T-Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cartoon T-Shirt</h3>
+                        <div class="price">$14.99</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn add-btn">Add to Cart</a>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcrBuz63-ymnNAEmWxGg0AmNlri3177aVPTA&s" alt="Kids Dress">
+                    </div>
+                    <div class="product-info">
+                        <h3>Floral Dress</h3>
+                        <div class="price">$24.99</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn add-btn">Add to Cart</a>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://webmedia.jbc.be/i/jbc/LP-DENIM-2?fmt=auto&qlt=default" alt="Kids Jeans">
+                    </div>
+                    <div class="product-info">
+                        <h3>Denim Jeans</h3>
+                        <div class="price">$19.99</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn add-btn">Add to Cart</a>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="data:image/jpeg;base64,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" alt="Kids Jacket">
+                    </div>
+                    <div class="product-info">
+                        <h3>Winter Jacket</h3>
+                        <div class="price">$34.99</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn add-btn">Add to Cart</a>
+                            <i class="far fa-heart heart-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Confirmation Popup -->
+        <div class="bgContainer" id="bgContainer">
+            <div class="cont" >
+              <p>Are you sure you want to add this product?</p>
+              <button id="yes" class="btn">Yes</button>
+            </div>
+            <div class="cont" id="confirmation">
+              <p>Thank you! Item added to cart.</p>
+            </div>
+          </div>
+    </section>
+    <button class=" bb btn" id="addbtn"> add a new product</button>
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>FashionStore</h3>
+                    <p>Your one-stop shop for all fashion needs. Quality products at affordable prices.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="female.html">Female</a></li>
+                        <li><a href="male.html">Male</a></li>
+                        <li><a href="children.html">Children</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://x.com/">Twitter</a></li>
+                        <li><a href="https://fr.pinterest.com/">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 FashionStore. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
